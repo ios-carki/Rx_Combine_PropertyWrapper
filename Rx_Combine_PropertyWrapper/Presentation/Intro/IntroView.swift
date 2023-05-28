@@ -14,7 +14,8 @@ struct IntroView: View {
     var body: some View {
         VStack(spacing: 14) {
             Button {
-                print("Hello")
+                print("Rx Button Clicked!")
+                navigation?.pushViewController(RxViewController(), animated: true)
             } label: {
                 RoundedRectangle(cornerRadius: 12)
                     .stroke(.black, lineWidth: 2)
@@ -27,7 +28,7 @@ struct IntroView: View {
             .frame(height: 50)
             
             Button {
-                print("Hello")
+                print("Combine Button Clikced!")
             } label: {
                 RoundedRectangle(cornerRadius: 12)
                     .stroke(.black, lineWidth: 2)
@@ -40,7 +41,7 @@ struct IntroView: View {
             .frame(height: 50)
             
             Button {
-                print("Hello")
+                print("SwiftUI Button Clicked!")
                 navigation?.pushViewController(UIHostingController(rootView: SwiftUIView(navigation: navigation)), animated: true)
             } label: {
                 RoundedRectangle(cornerRadius: 12)

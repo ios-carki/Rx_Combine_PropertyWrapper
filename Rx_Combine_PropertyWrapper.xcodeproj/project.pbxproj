@@ -16,6 +16,10 @@
 		C32522242A23AE9A005EA5C2 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32522232A23AE9A005EA5C2 /* Color+Extension.swift */; };
 		C325222C2A23C134005EA5C2 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C325222B2A23C134005EA5C2 /* NavigationController.swift */; };
 		C325222E2A23C3F0005EA5C2 /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C325222D2A23C3F0005EA5C2 /* View+Extension.swift */; };
+		C32522312A23C6D3005EA5C2 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32522302A23C6D3005EA5C2 /* BaseView.swift */; };
+		C32522342A23C6FE005EA5C2 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = C32522332A23C6FE005EA5C2 /* SnapKit */; };
+		C32522362A23C7AE005EA5C2 /* RxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32522352A23C7AE005EA5C2 /* RxView.swift */; };
+		C32522382A23CBFB005EA5C2 /* RxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32522372A23CBFB005EA5C2 /* RxViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +34,9 @@
 		C32522232A23AE9A005EA5C2 /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
 		C325222B2A23C134005EA5C2 /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 		C325222D2A23C3F0005EA5C2 /* View+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
+		C32522302A23C6D3005EA5C2 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		C32522352A23C7AE005EA5C2 /* RxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxView.swift; sourceTree = "<group>"; };
+		C32522372A23CBFB005EA5C2 /* RxViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C32522342A23C6FE005EA5C2 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +91,7 @@
 		C32522102A23A9CE005EA5C2 /* Rx */ = {
 			isa = PBXGroup;
 			children = (
+				C325222F2A23C6C6005EA5C2 /* Presentation */,
 			);
 			path = Rx;
 			sourceTree = "<group>";
@@ -159,6 +168,7 @@
 			children = (
 				C32522222A23AE90005EA5C2 /* Extension */,
 				C325222B2A23C134005EA5C2 /* NavigationController.swift */,
+				C32522302A23C6D3005EA5C2 /* BaseView.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -170,6 +180,15 @@
 				C325222D2A23C3F0005EA5C2 /* View+Extension.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		C325222F2A23C6C6005EA5C2 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				C32522352A23C7AE005EA5C2 /* RxView.swift */,
+				C32522372A23CBFB005EA5C2 /* RxViewController.swift */,
+			);
+			path = Presentation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -188,6 +207,9 @@
 			dependencies = (
 			);
 			name = Rx_Combine_PropertyWrapper;
+			packageProductDependencies = (
+				C32522332A23C6FE005EA5C2 /* SnapKit */,
+			);
 			productName = Rx_Combine_PropertyWrapper;
 			productReference = C32521F82A23A9BD005EA5C2 /* Rx_Combine_PropertyWrapper.app */;
 			productType = "com.apple.product-type.application";
@@ -216,6 +238,9 @@
 				Base,
 			);
 			mainGroup = C32521EF2A23A9BD005EA5C2;
+			packageReferences = (
+				C32522322A23C6FE005EA5C2 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = C32521F92A23A9BD005EA5C2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -245,10 +270,13 @@
 				C32521FC2A23A9BD005EA5C2 /* AppDelegate.swift in Sources */,
 				C325222C2A23C134005EA5C2 /* NavigationController.swift in Sources */,
 				C32522242A23AE9A005EA5C2 /* Color+Extension.swift in Sources */,
+				C32522362A23C7AE005EA5C2 /* RxView.swift in Sources */,
+				C32522382A23CBFB005EA5C2 /* RxViewController.swift in Sources */,
 				C32521FE2A23A9BD005EA5C2 /* SceneDelegate.swift in Sources */,
 				C32522202A23AC3D005EA5C2 /* SwiftUIView.swift in Sources */,
 				C325222E2A23C3F0005EA5C2 /* View+Extension.swift in Sources */,
 				C32522182A23AA5F005EA5C2 /* IntroView.swift in Sources */,
+				C32522312A23C6D3005EA5C2 /* BaseView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -458,6 +486,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C32522322A23C6FE005EA5C2 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C32522332A23C6FE005EA5C2 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C32522322A23C6FE005EA5C2 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C32521F02A23A9BD005EA5C2 /* Project object */;
 }
