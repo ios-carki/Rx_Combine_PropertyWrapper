@@ -24,6 +24,8 @@
 		C325223D2A24DA77005EA5C2 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = C325223C2A24DA77005EA5C2 /* RxRelay */; };
 		C325223F2A24DA77005EA5C2 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = C325223E2A24DA77005EA5C2 /* RxSwift */; };
 		C32522412A24DA86005EA5C2 /* RxViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32522402A24DA86005EA5C2 /* RxViewModel.swift */; };
+		C3EA88322A5EFE3E008C6520 /* ImageChangeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3EA88312A5EFE3E008C6520 /* ImageChangeView.swift */; };
+		C3EA88342A5EFE5B008C6520 /* ImageChangeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3EA88332A5EFE5B008C6520 /* ImageChangeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +44,8 @@
 		C32522352A23C7AE005EA5C2 /* RxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxView.swift; sourceTree = "<group>"; };
 		C32522372A23CBFB005EA5C2 /* RxViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxViewController.swift; sourceTree = "<group>"; };
 		C32522402A24DA86005EA5C2 /* RxViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxViewModel.swift; sourceTree = "<group>"; };
+		C3EA88312A5EFE3E008C6520 /* ImageChangeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageChangeView.swift; sourceTree = "<group>"; };
+		C3EA88332A5EFE5B008C6520 /* ImageChangeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageChangeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -196,6 +200,8 @@
 				C32522352A23C7AE005EA5C2 /* RxView.swift */,
 				C32522372A23CBFB005EA5C2 /* RxViewController.swift */,
 				C32522402A24DA86005EA5C2 /* RxViewModel.swift */,
+				C3EA88312A5EFE3E008C6520 /* ImageChangeView.swift */,
+				C3EA88332A5EFE5B008C6520 /* ImageChangeViewController.swift */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -284,7 +290,9 @@
 				C325222C2A23C134005EA5C2 /* NavigationController.swift in Sources */,
 				C32522242A23AE9A005EA5C2 /* Color+Extension.swift in Sources */,
 				C32522362A23C7AE005EA5C2 /* RxView.swift in Sources */,
+				C3EA88322A5EFE3E008C6520 /* ImageChangeView.swift in Sources */,
 				C32522382A23CBFB005EA5C2 /* RxViewController.swift in Sources */,
+				C3EA88342A5EFE5B008C6520 /* ImageChangeViewController.swift in Sources */,
 				C32521FE2A23A9BD005EA5C2 /* SceneDelegate.swift in Sources */,
 				C32522202A23AC3D005EA5C2 /* SwiftUIView.swift in Sources */,
 				C325222E2A23C3F0005EA5C2 /* View+Extension.swift in Sources */,

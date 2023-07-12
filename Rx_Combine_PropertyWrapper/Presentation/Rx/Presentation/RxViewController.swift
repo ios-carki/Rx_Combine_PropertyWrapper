@@ -28,6 +28,15 @@ final class RxViewController: UIViewController {
         
         increaseClick()
         decreaseClick()
+        functionButtons()
+    }
+    
+    func functionButtons() {
+        mainView.imageChangeFunctionButton.addTarget(self, action: #selector(imageChangeButtonClicked), for: .touchUpInside)
+    }
+    
+    @objc func imageChangeButtonClicked() {
+        navigationController?.pushViewController(ImageChangeViewController(), animated: true)
     }
     
     func increaseClick() {
