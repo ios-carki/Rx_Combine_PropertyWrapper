@@ -64,9 +64,9 @@ final class RxView: BaseView {
         return view
     }()
     
-    let backgroundColorChangeFunctionButton: UIButton = {
+    let loginFunctionButton: UIButton = {
         let view = UIButton()
-        view.setTitle("컬러 바꾸기", for: .normal)
+        view.setTitle("로그인 뷰", for: .normal)
         view.setTitleColor(.black, for: .normal)
         view.titleLabel?.font = UIFont.systemFont(ofSize: 16)
         view.backgroundColor = .yellow
@@ -95,7 +95,7 @@ final class RxView: BaseView {
     override func configureUI() {
         titleView.addSubview(title)
         counterView.addSubview(counterLabel)
-        [imageChangeFunctionButton, backgroundColorChangeFunctionButton].forEach {
+        [imageChangeFunctionButton, loginFunctionButton].forEach {
             functionStackView.addArrangedSubview($0)
         }
         

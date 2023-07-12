@@ -33,10 +33,15 @@ final class RxViewController: UIViewController {
     
     func functionButtons() {
         mainView.imageChangeFunctionButton.addTarget(self, action: #selector(imageChangeButtonClicked), for: .touchUpInside)
+        mainView.loginFunctionButton.addTarget(self, action: #selector(loginViewButtonClicked), for: .touchUpInside)
     }
     
     @objc func imageChangeButtonClicked() {
         navigationController?.pushViewController(ImageChangeViewController(), animated: true)
+    }
+    
+    @objc func loginViewButtonClicked() {
+        navigationController?.pushViewController(LoginViewController(), animated: true)
     }
     
     func increaseClick() {
