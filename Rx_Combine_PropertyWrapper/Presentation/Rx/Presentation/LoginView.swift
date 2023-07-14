@@ -56,20 +56,21 @@ final class LoginView: BaseView {
         return view
     }()
     
-    let customTextFieldTest: UIKitCustomTextField = {
-        let view = UIKitCustomTextField()
-        return view
-    }()
-        .setPlaceHolderText(text: "adsf")
-        .setTextColor(color: UIColor.red)
-        .setCornerRadius(radius: 12)
-        .setBorderColor(color: UIColor.blue.cgColor)
-        .setBorderWidth(width: 3)
-    
+    var customTextField = UIKitCustomTextField()
+    private func setCustomTextField() {
+        customTextField.titleText = "제목"
+        customTextField.titleTextColor = .red
+        customTextField.textFieldBorderWidth = 2.0
+        customTextField.textFieldBorderColor = UIColor.blue.cgColor
+        customTextField.textFieldTextColor = .black
+        customTextField.textFieldTextFont = UIFont.systemFont(ofSize: 14)
+    }
+
     override func configureUI() {
-        [idTextField, pwTextField, confirmPasswordTextField, customTextFieldTest, loginButton].forEach {
+        [idTextField, pwTextField, confirmPasswordTextField, customTextField, loginButton].forEach {
             self.addSubview($0)
         }
+        setCustomTextField()
         self.backgroundColor = .white
     }
     
@@ -91,7 +92,7 @@ final class LoginView: BaseView {
             make.horizontalEdges.equalTo(safeAreaLayoutGuide).inset(16)
             make.height.equalTo(50)
         }
-        customTextFieldTest.snp.makeConstraints { make in
+        customTextField.snp.makeConstraints { make in
             make.top.equalTo(confirmPasswordTextField.snp.bottom).offset(20)
             make.horizontalEdges.equalTo(safeAreaLayoutGuide).inset(16)
             make.height.equalTo(50)
